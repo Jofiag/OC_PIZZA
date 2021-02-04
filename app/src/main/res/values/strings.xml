@@ -19,4 +19,6 @@
     <string name="open_navigation_drawer_description_text">Open navigation drawer</string>
     <string name="close_navigation_drawer_description_text">Close navigation drawer</string>
     <string name="profile_image_text">Profile image</string>
+    <string name="facebook_image_text">Facebook image</string>
+    <string name="google_image_text">Google + image</string>
 </resources>

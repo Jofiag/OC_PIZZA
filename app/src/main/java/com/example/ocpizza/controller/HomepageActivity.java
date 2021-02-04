@@ -1,13 +1,11 @@
 package com.example.ocpizza.controller;
 
 import android.annotation.SuppressLint;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.res.ResourcesCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
@@ -92,7 +90,7 @@ public class HomepageActivity extends AppCompatActivity {
     }
 
     private void setMyNavigationView(){
-        Drawable itemBackground = ResourcesCompat.getDrawable(getResources(), R.drawable.baseline_local_dining_24, null);
+//        Drawable itemBackground = ResourcesCompat.getDrawable(getResources(), R.drawable.baseline_local_dining_24, null);
         myNavigationView.setNavigationItemSelectedListener(item -> {
             int id = item.getItemId();
 

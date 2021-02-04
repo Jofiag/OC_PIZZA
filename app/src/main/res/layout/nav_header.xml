@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="257dp"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/oc_pizza_4">
+    android:background="@drawable/oc_pizza_4_small_flou">
 
     <TextView
         android:id="@+id/title"
