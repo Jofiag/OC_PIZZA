@@ -1,47 +1,39 @@
 package com.example.ocpizza;
 
-import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import com.example.ocpizza.controller.HomepageActivity;
 
-//    private Button signInFacebookButton;
-//    private Button signInGoogleButton;
+public class MainActivity extends AppCompatActivity{
+
+    private Button signInFacebookButton;
+    private Button signInGoogleButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        setReferences();
+        setReferences();
+        signInWithFacebook();
+        signInWithGoogle();
     }
 
-//    private void setReferences(){
-//        signInFacebookButton = findViewById(R.id.sign_in_facebook_button);
-//        signInGoogleButton = findViewById(R.id.sign_in_google_button);
-//    }
-
-    @SuppressLint("NonConstantResourceId")
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.sign_in_facebook_button:
-                signInWithFacebook();
-                break;
-            case R.id.sign_in_google_button:
-                signInWithGoogle();
-                break;
-        }
+    private void setReferences(){
+        signInFacebookButton = findViewById(R.id.sign_in_facebook_button);
+        signInGoogleButton = findViewById(R.id.sign_in_google_button);
     }
+
 
     private void signInWithFacebook(){
-
+        signInFacebookButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HomepageActivity.class)));
     }
 
     private void signInWithGoogle(){
-
+        signInGoogleButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, HomepageActivity.class)));
     }
 }
