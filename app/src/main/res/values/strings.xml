@@ -13,4 +13,10 @@
     <string name="hello_map_view_fragment_text">Hello Map View Fragment</string>
     <string name="hello_list_view_fragment_text">Hello List View fragment</string>
     <string name="hello_workmates_fragment_text">Hello Workmates fragment</string>
+    <string name="your_lunch_text">YOUR LUNCH</string>
+    <string name="settings_text">SETTINGS</string>
+    <string name="logout_text">LOGOUT</string>
+    <string name="open_navigation_drawer_description_text">Open navigation drawer</string>
+    <string name="close_navigation_drawer_description_text">Close navigation drawer</string>
+    <string name="profile_image_text">Profile image</string>
 </resources>
