@@ -15,21 +15,34 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:fitsSystemWindows="true"
-        android:theme="@style/Theme.OCPIZZA">
+        android:fitsSystemWindows="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/my_toolbar"
+            <FrameLayout
+                android:id="@+id/my_toolbar_container"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#E45252"
-                app:navigationIcon="@drawable/baseline_menu_24"
-                app:titleTextColor="#FFFFFF" />
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/my_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E45252"
+                    app:navigationIcon="@drawable/baseline_menu_24"
+                    app:title="@string/im_hungry_text"
+                    app:titleTextColor="#FFFFFF"/>
+
+                <com.miguelcatalan.materialsearchview.MaterialSearchView
+                    android:id="@+id/my_material_search_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/fragment_container_homepage_activity"
